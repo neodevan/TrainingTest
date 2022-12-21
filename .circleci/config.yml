@@ -8,6 +8,7 @@ workflows:
     jobs:
       - cypress/install
       - cypress/run:
+          build: "npm run test"
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in CircleCI → Project Settings → Environment Variables
           requires:
@@ -21,5 +22,5 @@ workflows:
           parallelism: 2 # Uses 2 parallel instances
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
-          start: npm start
+          #start: npm start
           wait-on: 'https://kitchen.applitools.com/' # Waits for above

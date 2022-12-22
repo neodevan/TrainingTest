@@ -15,7 +15,7 @@ workflows:
             - cypress/install
           # Records to Cypress Dashboard
           # https://docs.cypress.io/guides/dashboard/projects#Set-up-a-project-to-record
-          record: true
+          record: false
           
           store_artifacts: true
           # Runs jobs in parallel

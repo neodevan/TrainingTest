@@ -2,13 +2,13 @@ version: 2.1
 # Uses the official Cypress Orb
 # https://circleci.com/developer/orbs/orb/cypress-io/cypress
 orbs:
-  cypress: cypress-io/cypress@1.16.1
+  cypress: cypress-io/cypress@1
 workflows:
   build:
     jobs:
       - cypress/install
       - cypress/run:
-          build: "npm run record:test"
+          build: "npx record:test"
           # For recording and parallelization to work you must set your CYPRESS_RECORD_KEY
           # in CircleCI → Project Settings → Environment Variables
           requires:

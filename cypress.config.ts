@@ -4,7 +4,7 @@ export default defineConfig({
   projectId: "ss7ape",
   e2e: {
     env: {
-      CYPRESS_RECORD_KEY: "690a20b7-73e9-456d-b052-72c5663d1f7a",
+      RECORD_KEY: "146dfedc-beec-47ba-a98d-62d3a6e2e5e8",
     },
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {

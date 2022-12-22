@@ -16,6 +16,8 @@ workflows:
           # Records to Cypress Dashboard
           # https://docs.cypress.io/guides/dashboard/projects#Set-up-a-project-to-record
           record: false
+          
+          store_artifacts: true
           # Runs jobs in parallel
           # https://docs.cypress.io/guides/guides/parallelization
           parallel: true
@@ -24,3 +26,5 @@ workflows:
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           #start: npm start
           wait-on: 'https://kitchen.applitools.com/' # Waits for above
+
+# VS Code Extension Version: 1.5.0
